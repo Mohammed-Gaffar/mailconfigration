@@ -27,7 +27,7 @@ class EmailController extends Controller
             'message' => $request->message
         );
 
-        Mail::to('m.gaffer@ingaz.com.sa')->send(new sendingEmail($data));
+        Mail::to('mohammedaidaab@gmail.com')->send(new sendingEmail($data));
         return back()->with('success', 'Thanks for contacting us!');
     }
 }
